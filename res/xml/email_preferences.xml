@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <EditTextPreference
+        android:title="@string/pref_mailto"
+        android:summary="@string/pref_mailto_summary"
+        android:key="prefMailto"/>
+    
+    <EditTextPreference
+        android:title="@string/pref_subject"
+        android:summary="@string/pref_subject_summary"
+        android:key="prefSubject"/>
+    
+    <EditTextPreference
+        android:title="@string/pref_text"
+        android:summary="@string/pref_text_summary"
+        android:key="prefText"/>
+    
+</PreferenceScreen>

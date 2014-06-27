@@ -25,7 +25,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name="de.jalin.droid.sketch.SettingActivity"
+            android:label="@string/title_activity_settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.jalin.droid.sketch.SketchActivity" />
+        </activity>
+        </application>
 
 </manifest>
 

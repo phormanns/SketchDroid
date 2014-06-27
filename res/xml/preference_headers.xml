@@ -1,0 +1,7 @@
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="de.jalin.droid.sketch.SettingActivity$EMailPrefsFragment"
+            android:title="EMail" />
+    
+</preference-headers>
