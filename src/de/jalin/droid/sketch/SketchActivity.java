@@ -5,10 +5,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import android.app.Activity;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -20,14 +22,16 @@ import android.widget.LinearLayout;
 
 public class SketchActivity extends Activity {
 
+	public static final String BUNDLE_KEY_DRAWING = "drawing";
+	
 	private Drawing drawing;
 	private SketchCanvas view;
 	
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		if (savedInstanceState != null && savedInstanceState.containsKey("drawing")) {
-			drawing = (Drawing) savedInstanceState.get("drawing");
+		if (savedInstanceState != null && savedInstanceState.containsKey(BUNDLE_KEY_DRAWING)) {
+			drawing = (Drawing) savedInstanceState.get(BUNDLE_KEY_DRAWING);
 		} else {
 			drawing = new Drawing();
 		}
@@ -40,7 +44,7 @@ public class SketchActivity extends Activity {
 	@Override
 	protected void onSaveInstanceState(final Bundle outState) {
 		super.onSaveInstanceState(outState);
-		outState.putSerializable("drawing", drawing);
+		outState.putSerializable(BUNDLE_KEY_DRAWING, drawing);
 	}
 	
 	@Override
@@ -76,7 +80,6 @@ public class SketchActivity extends Activity {
 		final int max = width > height ? width : height;
 		final Bitmap bitmap = Bitmap.createBitmap(max, max, Bitmap.Config.ARGB_8888);
 		Canvas canvas = new Canvas(bitmap);
-		canvas.drawColor(0xFFE0E0E0);
 		view.draw(canvas); 
 		try {
 			final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);

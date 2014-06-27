@@ -45,6 +45,7 @@ public class SketchCanvas extends View {
 
 	@Override
 	public void draw(final Canvas canvas) {
+		canvas.drawColor(0xFFE0E0E0);
 		drawing.draw(canvas, paint);
 	}
 

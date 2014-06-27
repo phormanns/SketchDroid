@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="de.jalin.droid.sketch.SketchActivity"
-    tools:ignore="MergeRootFrame">
+    tools:context="de.jalin.droid.sketch.SketchActivity">
 
     <LinearLayout
     	android:id="@+id/container"
