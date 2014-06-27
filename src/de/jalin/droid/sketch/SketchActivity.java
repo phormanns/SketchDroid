@@ -79,7 +79,7 @@ public class SketchActivity extends Activity {
 		canvas.drawColor(0xFFE0E0E0);
 		view.draw(canvas); 
 		try {
-			SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+			final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
 			final String mailto = preferences.getString("prefMailto", "hello@example.org");
 			final String subject = preferences.getString("prefSubject", "SketchDroid");
 			final String text = preferences.getString("prefText", "");
@@ -96,7 +96,7 @@ public class SketchActivity extends Activity {
 			intent.putExtra(Intent.EXTRA_EMAIL, new String[] { mailto } );
 			intent.putExtra(Intent.EXTRA_SUBJECT, subject);
 			intent.putExtra(Intent.EXTRA_TEXT, text);
-			startActivity(Intent.createChooser(intent, "Send Sketch"));
+			startActivity(Intent.createChooser(intent, getResources().getText(R.string.send_to)));
 		} catch (IOException e) {
 			Log.e("FILE", e.getLocalizedMessage(), e);
 		}

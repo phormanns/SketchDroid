@@ -11,12 +11,6 @@ public final class R {
     public static final class attr {
     }
     public static final class dimen {
-        /** 
-         Example customization of dimensions originally defined in res/values/dimens.xml
-         (such as screen margins) for screens with more than 820dp of available width. This
-         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
-    
-         */
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
     }
@@ -39,29 +33,18 @@ public final class R {
         public static final int action_settings=0x7f060003;
         public static final int action_share=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int pref_mailto=0x7f060008;
-        public static final int pref_mailto_summary=0x7f06000b;
-        public static final int pref_subject=0x7f060009;
-        public static final int pref_subject_summary=0x7f06000c;
-        public static final int pref_text=0x7f06000a;
-        public static final int pref_text_summary=0x7f06000d;
-        public static final int pref_user_profile=0x7f060007;
-        public static final int title_activity_settings=0x7f060006;
-        public static final int title_activity_sketch=0x7f060005;
+        public static final int pref_mailto=0x7f060009;
+        public static final int pref_mailto_summary=0x7f06000c;
+        public static final int pref_subject=0x7f06000a;
+        public static final int pref_subject_summary=0x7f06000d;
+        public static final int pref_text=0x7f06000b;
+        public static final int pref_text_summary=0x7f06000e;
+        public static final int pref_user_profile=0x7f060008;
+        public static final int send_to=0x7f060005;
+        public static final int title_activity_settings=0x7f060007;
+        public static final int title_activity_sketch=0x7f060006;
     }
     public static final class style {
-        /** 
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
-    
- API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
- API 14 theme customizations can go here. 
-         */
         public static final int AppBaseTheme=0x7f070000;
         public static final int AppTheme=0x7f070001;
     }
