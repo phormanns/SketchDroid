@@ -2,6 +2,9 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <header android:fragment="de.jalin.droid.sketch.SettingActivity$EMailPrefsFragment"
-            android:title="EMail" />
+            android:title="@string/title_email_prefs" />
+    
+    <header android:fragment="de.jalin.droid.sketch.SettingActivity$ColorsPrefsFragment"
+            android:title="@string/title_colors_prefs" />
     
 </preference-headers>

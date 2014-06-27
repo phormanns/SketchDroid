@@ -32,8 +32,12 @@ public class SettingActivity extends PreferenceActivity {
     
     @Override
     protected boolean isValidFragment(final String fragmentName) {
-    	final String fragmentClassName = EMailPrefsFragment.class.getName();
-		if (fragmentClassName.equals(fragmentName)) {
+    	final String emailPrefsClassName = EMailPrefsFragment.class.getName();
+		if (emailPrefsClassName.equals(fragmentName)) {
+    		return true;
+    	}
+    	final String colorsPrefsClassName = ColorsPrefsFragment.class.getName();
+		if (colorsPrefsClassName.equals(fragmentName)) {
     		return true;
     	}
     	return false;
@@ -45,6 +49,15 @@ public class SettingActivity extends PreferenceActivity {
         public void onCreate(final Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.email_preferences);
+        }
+    }
+    
+    public static class ColorsPrefsFragment extends PreferenceFragment {
+    	
+    	@Override
+        public void onCreate(final Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.color_preferences);
         }
     }
 }

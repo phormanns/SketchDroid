@@ -9,12 +9,44 @@
     <string name="send_to">send image to</string>
     <string name="title_activity_sketch">Sketch</string>
     <string name="title_activity_settings">Sketch settings</string>
+    <string name="title_colors_prefs">color settings</string>
+    <string name="title_email_prefs">email settings</string>
     <string name="pref_user_profile">user preferences</string>
     <string name="pref_mailto">mailto</string>
-    <string name="pref_subject">subject</string>
-    <string name="pref_text">text</string>
     <string name="pref_mailto_summary">email recipient</string>
+    <string name="pref_subject">subject</string>
     <string name="pref_subject_summary">email subject</string>
+    <string name="pref_text">text</string>
     <string name="pref_text_summary">email content</string>
-    
+    <string name="pref_fgcolor">color</string>
+    <string name="pref_fgcolor_summary">pen color</string>
+    <string name="pref_bgcolor">background</string>
+    <string name="pref_bgcolor_summary">backgroundcolor</string>
+    <string-array name="fgColorNames">
+		<item>black</item>
+		<item>blue</item>
+		<item>red</item>
+		<item>yellow</item>
+		<item>white</item>
+	</string-array>
+	<string-array name="fgColorKeys">
+	    <item>#000000</item>
+		<item>#4040C0</item>
+		<item>#E02020</item>
+		<item>#F0F000</item>
+		<item>#FFFFFF</item>
+	</string-array>
+    <string-array name="bgColorNames">
+		<item>white</item>
+		<item>lightgrey</item>
+		<item>darkgrey</item>
+		<item>black</item>
+	</string-array>
+	<string-array name="bgColorKeys">
+		<item>#FFFFFF</item>
+	    <item>#E0E0E0</item>
+		<item>#202020</item>
+	    <item>#000000</item>
+	</string-array>
+		
 </resources>

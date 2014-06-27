@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SketchDroid</string>
+    <string name="action_share">senden</string>
+    <string name="action_reset">löschen</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_about">Info</string>
+    <string name="send_to">Sende Skizze an</string>
+    <string name="title_activity_sketch">Sketch</string>
+    <string name="title_activity_settings">Sketch Einstellungen</string>
+    <string name="title_colors_prefs">Farb-Einstellungen</string>
+    <string name="title_email_prefs">Senden per E-Mail</string>
+    <string name="pref_user_profile">Persönliche Einstellungen</string>
+    <string name="pref_mailto">E-Mail an</string>
+    <string name="pref_mailto_summary">Per E-Mail an diese Adresse</string>
+    <string name="pref_subject">Betreff</string>
+    <string name="pref_subject_summary">Betraff der E-Mail</string>
+    <string name="pref_text">Text</string>
+    <string name="pref_text_summary">Inhalt der E-Mail</string>
+    <string name="pref_fgcolor">Farbe</string>
+    <string name="pref_fgcolor_summary">Farbe des Zeichen-Stiftes</string>
+    <string name="pref_bgcolor">Hintergrund</string>
+    <string name="pref_bgcolor_summary">Hintergrund-Farbe</string>
+    <string-array name="fgColorNames">
+		<item>schwarz</item>
+		<item>blau</item>
+		<item>rot</item>
+		<item>gelb</item>
+		<item>weiß</item>
+	</string-array>
+	<string-array name="fgColorKeys">
+	    <item>#000000</item>
+		<item>#4040C0</item>
+		<item>#E02020</item>
+		<item>#F0F000</item>
+		<item>#FFFFFF</item>
+	</string-array>
+    <string-array name="bgColorNames">
+		<item>weiß</item>
+		<item>hellgrau</item>
+		<item>dunkelgrau</item>
+		<item>schwarz</item>
+	</string-array>
+	<string-array name="bgColorKeys">
+		<item>#FFFFFF</item>
+	    <item>#E0E0E0</item>
+		<item>#202020</item>
+	    <item>#000000</item>
+	</string-array>
+		
+</resources>

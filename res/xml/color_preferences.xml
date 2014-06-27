@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <ListPreference
+        android:title="@string/pref_bgcolor"
+        android:summary="@string/pref_bgcolor_summary"
+        android:key="prefBGColor"
+        android:entries="@array/bgColorNames"
+  		android:entryValues="@array/bgColorKeys" />
+    
+    <ListPreference
+        android:title="@string/pref_fgcolor"
+        android:summary="@string/pref_fgcolor_summary"
+        android:key="prefFGColor"
+        android:entries="@array/fgColorNames"
+  		android:entryValues="@array/fgColorKeys" />
+    
+</PreferenceScreen>
